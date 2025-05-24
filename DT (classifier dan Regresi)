@@ -1,0 +1,42 @@
+# Decision Tree: Classifier & Regressor
+
+This document explains the difference and implementation of **Decision Tree Classifier** and **Decision Tree Regressor** using Python and scikit-learn.
+
+---
+
+## 🌳 What is a Decision Tree?
+
+A Decision Tree is a supervised machine learning model used to predict outcomes by learning simple decision rules from data features.
+
+It works by recursively splitting data based on feature values to reduce uncertainty or error.
+
+---
+
+## 🔠 1. Decision Tree Classifier
+
+### 🧠 Purpose:
+Used when the **target variable (`y`) is categorical** (e.g., "yes" or "no", "cat" or "dog", 0 or 1).
+
+### ✅ Characteristics:
+- Output: class labels
+- Task: classification
+- Splits data to increase class purity
+
+### 📌 Example Code:
+
+```python
+from sklearn import tree
+import matplotlib.pyplot as plt
+
+x = [[150, 50], [160, 55], [170, 65], [180, 70]]  # Features: height & weight
+y = [0, 0, 1, 1]  # Labels: 0 = short, 1 = tall
+
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(x, y)
+
+print(clf.predict([[165, 60]]))  # Predict class
+
+plt.figure(figsize=(8, 4))
+tree.plot_tree(clf, filled=True, feature_names=["Height", "Weight"], class_names=["Short", "Tall"])
+plt.title("Decision Tree Classifier")
+plt.show()
