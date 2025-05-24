@@ -1,4 +1,1 @@
-I learned about Matplotlib and Seaborn,
-where a scatter plot is used to compare two numbers,
-a histogram plot shows how frequently a number appears,
-and a bar chart is used to compare the quantity of numbers across categories.
+
