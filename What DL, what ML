@@ -1,0 +1,14 @@
+Today I came to a conclusion that truly amazed me:
+Deep Learning is not a separate branch from Machine Learning, but rather a smaller part within it.
+
+Machine Learning (ML) requires many manually crafted features, such as color, shape, and other attributes.
+
+Deep Learning (DL), on the other hand, does not require manually defined features. Instead, the model learns them automatically using neural networks (NN).
+
+Source:
+
+Intel – What is Computer Vision?
+
+DeepLearning.AI — Coursera Materials
+
+My own learning exploration & experiments
