@@ -40,3 +40,4 @@ plt.figure(figsize=(8, 4))
 tree.plot_tree(clf, filled=True, feature_names=["Height", "Weight"], class_names=["Short", "Tall"])
 plt.title("Decision Tree Classifier")
 plt.show()
+```
